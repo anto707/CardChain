@@ -3,7 +3,7 @@ body {
     margin:0;
     padding: 0;
     font-family: 'aespa', sans-serif;
-    background-image: url("./dist/imgs/bg.jpg");
+    background-image: url("./imgs/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -86,23 +86,3 @@ body {
     left: 22%; 
   }
 
-.play-btn {position: relative;}
-.play-btn .link {
-    position: absolute;
-    top: 37%; /*your button position*/
-    right: 46.5%; /*your button position*/
-}
-.play-btn img {
-  border-radius: 20px;
-}
-
-a {
-  color: #0060B6;
-  text-decoration: none;
-}
-
-a:hover {
-  color:#00A0C6; 
-  text-decoration:none; 
-  cursor:pointer;  
-}
