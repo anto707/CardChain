@@ -1,0 +1,269 @@
+@import url('https://fonts.cdnfonts.com/css/aespa');
+
+#App { 
+    font-family: 'aespa', sans-serif;
+    color: white;
+    background-image: url("../assets/imgs/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+footer{
+  margin-top: auto;
+}
+
+#logo {
+  max-width: 50%; 
+  height: auto;
+}
+
+#intro {
+  color:white;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    max-width: 90%; 
+  }
+  #intro {
+    font-size: 15px;
+  }
+  .navbar-brand .img {
+    width:"50%";
+    
+  }
+}
+
+.parent {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#pg1 {
+    position: absolute;
+    width: 6%; 
+    height: auto;   
+    top: 15%;
+    left: 13%;
+}
+#pg2 {
+    position: absolute;
+    width: 18%; 
+    height: auto;   
+    top: 50%;
+    left: 5%;
+    transform: rotate(-5deg); 
+}
+
+#pg3 {
+    position: absolute;
+    width: 7%; 
+    height: auto;   
+    top: 15%;
+    left: 80%;
+    transform: rotate(-10deg); 
+}
+
+#pg4{
+  position: absolute;
+  width: 18%; 
+  top: 54%;
+  left: 80%;
+  transform: rotate(5deg); 
+}
+#pg5{
+  position: absolute;
+  width: 14%; 
+  top: 54%;
+  left: 46%;
+  transform: rotate(5deg); 
+}
+#pg6{
+  position: absolute;
+  width: 9%; 
+  top: 40%;
+  left: 40%;
+  transform: rotate(5deg); 
+}
+#pg7{
+  position: absolute;
+  width: 16%; 
+  top: 37%;
+  left: 60%; 
+}
+#pg8{
+  position: absolute;
+  width: 13%; 
+  top: 37%;
+  left: 22%; 
+}
+
+
+#game{
+  background-color: black;
+}
+
+#buttons-container{
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top: 57%;
+  left: 50%;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -60%);
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1;
+  min-height: 50vh;
+  min-width: 30vw;
+  border: 4px solid;
+  border-image: conic-gradient(rgb(166, 166, 166), pink, rgb(7, 174, 177), rgb(254, 137, 254), rgb(1, 225, 1), yellow, rgb(166, 166, 166)) 1;
+  animation: zoomIn 0.3s;
+}
+
+.popup-content {
+  text-align: center;
+  
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.logo-center{
+  max-width: 50%; 
+  height: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 580px) {
+  .navbar-brand img {
+    max-width: 80%; 
+  }
+  .navbar-brand{
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: 581px) {
+  .navbar-brand img {
+    max-width: 40%; 
+  }
+  .navbar-brand{
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand img {
+    max-width: 30%; 
+  }
+  .navbar-brand{
+    padding-top: 7px;
+  }
+}
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  top: 0;
+}
+
+
+#userBar {
+  margin-left: 15px;
+}
+
+.accountId-text{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.nav-item:hover{
+  transform: scale(1.1);
+}
+
+.truncated-text {
+  color: white;
+  width: 320px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  transition: width 0.3s ease; 
+}
+
+.truncated-text:hover {
+  width: 560px; 
+}
+
+.card {
+  background-color: transparent;
+  color: white;
+  border-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+#userBar .truncated-text{
+  border: solid transparent;
+  border-image: url("../assets/imgs/sticker.png") 30 stretch;
+}
+
+#tokenContainer {
+  padding-left: 10px;
+}
+
+.plus-btn:hover {
+  transform: scale(1.7);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: translate(-50%, -60%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -60%) scale(1);
+  }
+}
